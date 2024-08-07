@@ -1,9 +1,9 @@
 import { calculateScrabbleScore } from "./scrabble-score";
 import { test, expect } from "vitest";
 
-// test("A score test", () => {
-// 	expect(calculateScrabbleScore(`A`)).toBe(1);
-// });
+test("A score test", () => {
+	expect(calculateScrabbleScore(`A`)).toBe(1);
+});
 
 test.each([
 	{ a: "A", expected: 1 },
@@ -34,4 +34,8 @@ test.each([
     { a: "Z", expected: 10 }
 ])("calculateScrabbleScore ($a) -> $expected ", ({ a, expected }) => {
 	expect(calculateScrabbleScore(a)).toBe(expected);
+});
+
+test("multiple letter test 1", () => {
+	expect(calculateScrabbleScore(`ABC`)).toBe(7);
 });
