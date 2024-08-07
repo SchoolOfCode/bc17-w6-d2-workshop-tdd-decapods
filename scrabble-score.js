@@ -1,7 +1,5 @@
 export function calculateScrabbleScore(word) {
     let score = 0
-    wordArray = [...word]
-    word = wordArray.toUpperCase()
         if (word === 'A') { score += 1; }
         if (word === 'B') { score += 3; }
         if (word === 'C') { score += 3; }
@@ -30,3 +28,12 @@ export function calculateScrabbleScore(word) {
         if (word === 'Z') { score += 10; }
     return score;
 }
+
+
+// function that makes array from input, captialises it, and calls back previous function and runs it through each letter of the array 
+// then use reduce through new array of numbers, and calculate total sum 
+export function 
+wordArray = [...letters]
+word = wordArray.toUpperCase()
+
+console.log(word);

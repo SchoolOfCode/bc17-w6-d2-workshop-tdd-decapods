@@ -39,3 +39,7 @@ test.each([
 test("multiple letter test 1", () => {
 	expect(calculateScrabbleScore(`ABC`)).toBe(7);
 });
+
+test("letters to word", () => {
+    expect(letterToWord('DEF')).toBe(['D','E', 'F'])
+    });
